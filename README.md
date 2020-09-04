@@ -3,7 +3,7 @@
 ## Cloning
 Clone the repo as a bare repository into your home directory with the following commands:
 
-- $```git clone --bare <git-repo-url> $HOME/.cfg```
+- $```git clone --bare git@github.com:Discolai/dotconfig.git $HOME/.cfg```
 - $```alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'```
 - $```config checkout```
 
