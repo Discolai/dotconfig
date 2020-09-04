@@ -1,0 +1,11 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    uriHandlerRegistration: "always"
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "0ea59890-5fc1-4605-b79d-29d983d0dbe1"
+  welcome:
+    showOnStartup: false
