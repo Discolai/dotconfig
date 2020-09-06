@@ -137,3 +137,5 @@ fi
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
 
+# gitignore.io api
+function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}
