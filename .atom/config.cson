@@ -1,0 +1,35 @@
+"*":
+  "atom-package-deps":
+    ignored: [
+      "prettier-atom"
+      "atom-ternjs"
+    ]
+  "autocomplete-python":
+    useKite: false
+  core:
+    disabledPackages: [
+      "autocomplete-python"
+      "autocomplete-clang"
+    ]
+    telemetryConsent: "no"
+    uriHandlerRegistration: "always"
+  editor:
+    autoIndentOnPaste: false
+    fontSize: 16
+    showIndentGuide: true
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: false
+  "exception-reporting":
+    userId: "0ea59890-5fc1-4605-b79d-29d983d0dbe1"
+  "line-ending-selector": {}
+  "linter-ui-default":
+    showPanel: true
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNoConfigFile: true
+  welcome:
+    showOnStartup: false

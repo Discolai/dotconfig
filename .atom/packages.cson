@@ -1,0 +1,8 @@
+packages: [
+  "atom-live-server"
+  "atom-ternjs"
+  "autocomplete-clang"
+  "autocomplete-python"
+  "package-sync"
+  "prettier-atom"
+]
