@@ -3,6 +3,8 @@ packages: [
   "atom-ternjs"
   "autocomplete-clang"
   "autocomplete-python"
+  "language-vue"
   "package-sync"
   "prettier-atom"
+  "vuejs2-snippets"
 ]
