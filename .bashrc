@@ -139,3 +139,7 @@ config config --local status.showUntrackedFiles no
 
 # gitignore.io api
 function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
