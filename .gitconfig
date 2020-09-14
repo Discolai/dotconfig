@@ -4,7 +4,7 @@
 [alias]
 	# (https://gist.github.com/mwhite/6887990)
 	# one-line log
-	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=format:'%d-%m-%Y %H:%M:%S'
 
 	ps = push
 	pl = pull
