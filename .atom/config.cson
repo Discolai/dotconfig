@@ -11,6 +11,7 @@
       "autocomplete-python"
       "autocomplete-clang"
     ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     uriHandlerRegistration: "always"
   editor:
@@ -21,7 +22,8 @@
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "0ea59890-5fc1-4605-b79d-29d983d0dbe1"
-  "line-ending-selector": {}
+  "line-ending-selector":
+    defaultLineEnding: "LF"
   "linter-ui-default":
     showPanel: true
   "package-sync":

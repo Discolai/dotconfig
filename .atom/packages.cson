@@ -1,9 +1,12 @@
 packages: [
+  "atom-ide-ui"
   "atom-live-server"
   "atom-ternjs"
+  "atom-typescript"
   "autocomplete-clang"
   "autocomplete-python"
   "editorconfig"
+  "language-docker"
   "language-vue"
   "package-sync"
   "prettier-atom"
