@@ -6,9 +6,11 @@ packages: [
   "autocomplete-clang"
   "autocomplete-python"
   "editorconfig"
+  "emmet"
   "language-docker"
   "language-vue"
   "package-sync"
   "prettier-atom"
+  "react-snippets"
   "vuejs2-snippets"
 ]

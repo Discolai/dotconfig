@@ -20,6 +20,8 @@
     showIndentGuide: true
     tabType: "soft"
     zoomFontWhenCtrlScrolling: false
+  emmet:
+    formatLineBreaks: false
   "exception-reporting":
     userId: "0ea59890-5fc1-4605-b79d-29d983d0dbe1"
   "line-ending-selector":

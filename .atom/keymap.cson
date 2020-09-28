@@ -30,3 +30,13 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+
+'atom-text-editor[data-grammar="text html basic"]:not([mini]), atom-text-editor[data-grammar~="erb"]:not([mini]), atom-text-editor[data-grammar~="jade"]:not([mini]), atom-text-editor[data-grammar~="css"]:not([mini]), atom-text-editor[data-grammar~="stylus"]:not([mini]), atom-text-editor[data-grammar~="sass"]:not([mini]), atom-text-editor[data-grammar~="scss"]:not([mini])':
+  'tab': 'snippets:expand'
+  'ctrl-space': 'emmet:expand-abbreviation'
+
+'atom-text-editor[data-grammar~="jsx"]:not([mini])':
+  'ctrl-space': 'emmet:expand-abbreviation'
+
+'atom-text-editor[data-grammar~="tsx"]:not([mini])':
+  'ctrl-space': 'emmet:expand-abbreviation'
