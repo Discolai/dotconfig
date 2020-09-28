@@ -9,6 +9,7 @@ packages: [
   "emmet"
   "language-docker"
   "language-vue"
+  "linter-eslint"
   "package-sync"
   "prettier-atom"
   "react-snippets"

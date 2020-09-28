@@ -4,21 +4,26 @@
       "prettier-atom"
       "atom-ternjs"
     ]
+  "atom-typescript":
+    sigHelpDisplayOnChange: false
+    suppressAllDiagnostics: true
+    unusedAsInfo: false
   "autocomplete-python":
     useKite: false
   core:
     disabledPackages: [
-      "autocomplete-python"
       "autocomplete-clang"
+      "autocomplete-python"
     ]
-    packagesWithKeymapsDisabled: []
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
     telemetryConsent: "no"
     uriHandlerRegistration: "always"
   editor:
     autoIndentOnPaste: false
     fontSize: 16
     showIndentGuide: true
-    tabType: "soft"
     zoomFontWhenCtrlScrolling: false
   emmet:
     formatLineBreaks: false
@@ -26,7 +31,20 @@
     userId: "0ea59890-5fc1-4605-b79d-29d983d0dbe1"
   "line-ending-selector":
     defaultLineEnding: "LF"
+  "linter-eslint":
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.js.jsx"
+      "source.flow"
+      "source.babel"
+      "source.js-semantic"
+      "source.tsx"
+      "source.ts"
+    ]
+  "linter-tslint": {}
   "linter-ui-default":
+    panelHeight: 272
     showPanel: true
   "package-sync":
     createOnChange: true
@@ -35,5 +53,6 @@
     formatOnSaveOptions:
       enabled: true
       isDisabledIfNoConfigFile: true
+      showInStatusBar: true
   welcome:
     showOnStartup: false
