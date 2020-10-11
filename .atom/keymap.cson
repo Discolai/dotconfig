@@ -37,5 +37,8 @@
 'atom-text-editor[data-grammar~="jsx"]:not([mini])':
   'ctrl-space': 'emmet:expand-abbreviation'
 
+'atom-text-editor[data-grammar~="vue"]:not([mini])':
+  'ctrl-space': 'emmet:expand-abbreviation'
+
 'atom-text-editor[data-grammar~="tsx"]:not([mini])':
   'ctrl-space': 'emmet:expand-abbreviation'
