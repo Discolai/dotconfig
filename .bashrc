@@ -131,6 +131,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
       complete_func=_git_$(__git_aliased_command ${al})
       function_exists ${complete_fnc} && __git_complete g${al} ${complete_func}
     done
+
+    __git_complete "git mgd" _git_merge
+    __git_complete gmgd _git_merge
 fi
 
 # Git bare repo alias

@@ -4,9 +4,10 @@
 [alias]
 	# (https://gist.github.com/mwhite/6887990)
 	# one-line log
-	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=format:'%d-%m-%Y %H:%M:%S'
+	l = log --graph --oneline --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=format:'%d-%m-%Y %H:%M:%S'
 
 	ps = push
+        psu = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
 	pl = pull
 
 	a = add
@@ -24,8 +25,10 @@
 	s = status -s
 	co = checkout
 	cob = checkout -b
-	# list branches sorted by last modified
-	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+	b = branch
+
+	mg = merge
+        mgd = "!git mg $1 && git b -d $1; #"
 
 	# list aliases
 	la = "!git config -l | grep alias | cut -c 7-"
