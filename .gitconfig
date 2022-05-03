@@ -8,6 +8,8 @@
 
 	ps = push
         psu = "!git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\""
+
+	ft = fetch
 	pl = pull
 
 	a = add
