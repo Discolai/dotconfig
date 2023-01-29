@@ -153,3 +153,8 @@ if [[ "$(uname -r)" == *"microsoft"* ]]
 then
     export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
 fi
+
+
+if [ -z $(git config --get user.email) ]; then
+    >&2 echo -e "\033[0;31mgit email not set\033[0m"
+fi

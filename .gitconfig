@@ -1,6 +1,7 @@
 [user]
-	email = nikolainh@hotmail.com
 	name = Nikolai Norum Hansen
+[include]
+	path = ~/.gitconfig-email
 [alias]
 	# (https://gist.github.com/mwhite/6887990)
 	# one-line log
