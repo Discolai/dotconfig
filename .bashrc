@@ -96,15 +96,6 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -116,45 +107,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Git alias autocomplete (https://gist.github.com/mwhite/6887990)
-function_exists() {
-    declare -f -F $1 > /dev/null
-    return $?
-}
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /usr/share/bash-completion/completions/git
-
-    for al in $(git config --get-regexp '^alias\.' | cut -f 1 -d ' ' | cut -f 2 -d '.'); do
-      alias g$al="git $al"
-
-      complete_func=_git_$(__git_aliased_command ${al})
-      function_exists ${complete_fnc} && __git_complete g${al} ${complete_func}
-    done
-
-    __git_complete "git mgd" _git_merge
-    __git_complete gmgd _git_merge
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
 fi
 
-# Git bare repo alias
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-config config --local status.showUntrackedFiles no
-
-# gitignore.io api
-function gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Set display if running in wsl
-
-if [[ "$(uname -r)" == *"microsoft"* ]]
-then
-    export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
 fi
 
-
-if [ -z $(git config --get user.email) ]; then
-    >&2 echo -e "\033[0;31mgit email not set\033[0m"
-fi
